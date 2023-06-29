@@ -142,6 +142,7 @@ public class NacosRce {
     private static void printUsage() {
         System.err.println("Nacos Hessian 反序列化漏洞利用工具 v0.4");
         System.err.println("Author: 刨洞安全 && 凉风");
+        System.err.println("https://github.com/c0olw/NacosRce");
         System.err.println("** 食用方式 **");
         System.err.println("执行无回显命令\tjava -jar NacosRce.jar ip:port \"command\" ");
         System.err.println("同时注入冰蝎&&CMD内存马[推荐]\tjava -jar NacosRce.jar ip:port memshell");
