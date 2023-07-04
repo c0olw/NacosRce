@@ -41,11 +41,6 @@
             <artifactId>protobuf-java</artifactId>
             <version>3.21.11</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-assembly-plugin</artifactId>-->
-<!--            <version>3.6.0</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -58,13 +53,7 @@
             <scope>provided</scope>
         </dependency>
 
-
-
-
     </dependencies>
-
-
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
