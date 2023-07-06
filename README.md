@@ -64,6 +64,14 @@ java -jar NacosRce.jar http://192.168.90.1:8848  7848 "whoami" windows
 <br />windows 没打成功也许是因为没权限操作C盘或其他原因
 <br />
 <br />
+<br />关于编译<br />
+遇到依赖冲突无法编译的可以用以下方式
+<br />![img_4.png](img_4.png)<br />
+<br />![img_3.png](img_3.png)<br />
+
+
+
+
 项目地址：https://github.com/c0olw/NacosRce
 推荐哥斯拉Nacos后渗透插件：https://github.com/pap1rman/postnacos
 <br />参考文章
